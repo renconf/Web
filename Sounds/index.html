@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sound test</title>
+    <style>
+        .btn {
+            width: 50px;
+            height: 50px;
+            background-color: #2caf79;
+            border: 1px solid #000;
+            border-radius: 50%;
+            margin: 13px;
+            display: inline-block;
+            /* display: block; */
+        }
+        .btn:hover{
+            opacity: 0.65;
+        }
+    </style>
+</head>
+
+<body>
+    <button onmousedown="sound1.play()" class="btn">1</button>
+    <button onmousedown="sound2.play()" class="btn">2</button>
+    <button class="btn">3</button>
+    <button class="btn">4</button>
+    <button class="btn">5</button>
+    <button class="btn">6</button>
+    <button class="btn">7</button>
+    <button class="btn">8</button>
+    <button class="btn">9</button>
+
+    <script>
+        var sound1 = new Audio();
+        sound1.src = "sfx/sunflower.mp3";
+        
+        var sound2 = new Audio();
+        sound2.src = "sfx/slash.mp3";
+    </script>
+
+</body>
+
+
+
+</html>
